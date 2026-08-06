@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 # Set this to enable image captioning (optional — ingestion works without it,
 # images are still extracted, captions are just left as placeholders)
-export ANTHROPIC_API_KEY=your_key_here
+export API_KEY = your_key_here
 
 python run_ingestion.py path/to/document.pdf --out data/output/segments.json
 ```
