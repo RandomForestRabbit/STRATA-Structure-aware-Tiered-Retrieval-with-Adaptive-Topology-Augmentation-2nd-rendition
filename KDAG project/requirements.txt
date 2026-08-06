@@ -1,0 +1,21 @@
+# Phase 1 — PDF ingestion
+PyMuPDF>=1.23.0
+pdfplumber>=0.10.0
+anthropic>=0.25.0
+
+# Phase 2 — Chunking & Embedding
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+spacy>=3.6.0
+tiktoken>=0.5.0
+
+# Phase 3 — Knowledge Graph
+networkx>=3.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Phase 4 — Retrieval (cross-encoder reranking is optional)
+# cross-encoder models loaded via sentence-transformers
+
+# Phase 6 — Evaluation
+# No additional dependencies
