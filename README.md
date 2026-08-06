@@ -1,4 +1,4 @@
-# STRATA
+
 ### Structure-aware Tiered Retrieval with Adaptive Topology-Augmentation
 
 STRATA is a retrieval-augmented generation (RAG) system for PDF question answering
