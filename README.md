@@ -49,10 +49,6 @@ PDF → Typed Segment Extraction (text / table / image caption / heading)   [Pha
     → Evaluation across document types (Recall@k, MRR, answer correctness) [Phase 6]
 ```
 
-## Status
-
-🚀 **All core phases (1-6) implemented.** Ready for end-to-end testing and evaluation.
-
 ## Phase 1: PDF Ingestion
 
 Converts a raw PDF into an ordered stream of **typed segments** — the shared
@@ -121,31 +117,7 @@ python -m src.ingestion.segment_builder path/to/document.pdf
   body text, or bold), which works well for most academic/report-style PDFs
   but can misfire on documents with unconventional typography.
 
-## Roadmap
 
-- [x] Phase 1 — Typed segment extraction (text, tables, images)
-- [x] Phase 2 — Hybrid boundary-aware chunker (drift + continuity + structure)
-- [x] Phase 3 — Entity/relation extraction + dual-level graph construction
-- [x] Phase 4 — Query-time retrieval with graph-hop expansion
-- [x] Phase 5 — Generation
-- [x] Phase 6 — Cross-document-type evaluation harness (tabular / image-heavy / long-form / instructional)
 
-## Repo Structure
-
-```
-strata/
-├── src/
-│   └── ingestion/
-│       ├── layout_extractor.py
-│       ├── table_detector.py
-│       ├── image_captioner.py
-│       └── segment_builder.py
-├── tests/
-│   └── test_ingestion.py
-├── data/
-│   ├── sample_pdfs/
-│   └── output/
-├── run_ingestion.py
-├── requirements.txt
 └── README.md
 ```
