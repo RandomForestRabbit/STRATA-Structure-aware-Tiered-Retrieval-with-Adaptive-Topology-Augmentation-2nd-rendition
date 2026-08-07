@@ -49,9 +49,6 @@ PDF → Typed Segment Extraction (text / table / image caption / heading)   [Pha
     → Evaluation across document types (Recall@k, MRR, answer correctness) [Phase 6]
 ```
 
-## Status
-
-🚀 **All core phases (1-6) implemented.** Ready for end-to-end testing and evaluation.
 
 ## Phase 1: PDF Ingestion
 
